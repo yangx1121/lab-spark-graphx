@@ -42,7 +42,7 @@ wget http://dl.bintray.com/spark-packages/maven/graphframes/graphframes/0.5.0-sp
 jar xf graphframes-0.5.0-spark2.1-s_2.11.jar
 
 # Start screen session and detach
-screen -dm bash -c "PYSPARK_DRIVER_PYTHON_OPTS=\"notebook --no-browser --port=8888 --ip=0.0.0.0 --NotebookApp.token=''\" PYSPARK_DRIVER_PYTHON=jupyter pyspark ----packages graphframes:graphframes:0.5.0-spark2.1-s_2.11"
+screen -dm bash -c "PYSPARK_DRIVER_PYTHON_OPTS=\"notebook --no-browser --port=8888 --ip=0.0.0.0 --NotebookApp.token=''\" PYSPARK_DRIVER_PYTHON=jupyter pyspark --packages graphframes:graphframes:0.5.0-spark2.1-s_2.11"
 
 echo Cluster Customization completed at `date`
 
